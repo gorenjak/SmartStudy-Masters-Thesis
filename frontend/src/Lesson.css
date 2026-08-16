@@ -1,0 +1,19 @@
+.adaptive-highlight-sentence {
+  background-color: #ede3ff;
+  border-radius: 3px;
+  transition: all 0.5s ease;
+  animation: adaptiveFade 0.6s ease;
+
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+@keyframes adaptiveFade {
+  from {
+    background-color: transparent;
+  }
+
+  to {
+    background-color: #ede3ff;
+  }
+}
