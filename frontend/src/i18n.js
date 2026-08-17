@@ -272,6 +272,10 @@ const resources = {
       // RESEARCH COMPLETION
       "thank_you_title": "Thank you for participating!",
       "thank_you_desc": "Your responses have been saved successfully. Click “Finish research” to complete your participation and sign out.",
+      "research_completed": {
+        "title": "Research completed",
+        "description": "Thank you for participating in the SmartStudy research."
+      },
 
       // LEARNING COACH
       "coach_title": "Learning Coach",
@@ -600,6 +604,10 @@ const resources = {
       // ZAKLJUČEK RAZISKAVE
       "thank_you_title": "Hvala za sodelovanje!",
       "thank_you_desc": "Vaši odgovori so bili uspešno shranjeni. S klikom na »Zaključi raziskavo« boste zaključili sodelovanje in se odjavili.",
+      "research_completed": {
+        "title": "Raziskava zaključena",
+        "description": "Hvala za sodelovanje v raziskavi SmartStudy."
+      },
 
       // UČNI VODNIK
       "coach_title": "Učni vodnik",
