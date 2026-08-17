@@ -60,7 +60,6 @@ const Survey = ({ user, config, onFinish }) => {
     currentQuestion?.id.startsWith('trust') ||
     currentQuestion?.id.startsWith('privacy') ||
     currentQuestion?.id.startsWith('perceivedPersonalization');
-    currentQuestion?.id === 'adaptation_notice';
   const scaleValues = usesSevenPointScale
     ? [1, 2, 3, 4, 5, 6, 7]
     : [1, 2, 3, 4, 5];

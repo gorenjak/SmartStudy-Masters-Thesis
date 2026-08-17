@@ -1788,11 +1788,19 @@ def submit_survey():
                     "error": f"Invalid response value for {key}"
                 }), 400
 
-            if numeric_value < 1 or numeric_value > 5:
+            uses_seven_point_scale = (
+                key.startswith("trust")
+                or key.startswith("privacy")
+                or key.startswith("perceivedPersonalization")
+            )
+
+            max_value = 7 if uses_seven_point_scale else 5
+
+            if numeric_value < 1 or numeric_value > max_value:
                 return jsonify({
                     "error": (
                         f"Response out of range for {key} "
-                        "(must be 1-5)"
+                        f"(must be 1-{max_value})"
                     )
                 }), 400
 
