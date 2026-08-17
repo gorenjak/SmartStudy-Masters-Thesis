@@ -157,11 +157,11 @@ const Survey = ({ user, config, onFinish }) => {
               </span>
 
               <h2 className="text-lg md:text-xl font-black text-slate-900 leading-tight">
-                {t('survey.thank_you_title')}
+                {t('thank_you_title')}
               </h2>
 
               <p className="text-[13px] text-slate-600 font-medium mt-1 italic leading-relaxed">
-                {t('survey.thank_you_desc')}
+                {t('thank_you_desc')}
               </p>
             </div>
           </header>
