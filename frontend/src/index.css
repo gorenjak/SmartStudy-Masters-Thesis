@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@media (max-width: 1366px) and (min-width: 1024px) {
+  #root {
+    zoom: 0.86;
+  }
+
+  .min-h-screen {
+    min-height: calc(100dvh / 0.86);
+  }
+
+  .h-screen {
+    height: calc(100dvh / 0.86);
+  }
+
+  .lesson-aside-scroll {
+    max-height: calc((100svh - 7.5rem) / 0.86);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-gutter: stable;
+  }
+}
+
+@media (min-width: 1367px) {
+  .lesson-aside-scroll {
+    max-height: calc(100svh - 5rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-gutter: stable;
+  }
+}
